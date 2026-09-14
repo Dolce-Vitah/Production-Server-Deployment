@@ -41,3 +41,28 @@ CMD ["serve", "-s", "dist", "-l", "3000"]
 Сравнение с multistage образом:
 
 ![alt text](assets/image2.png)
+
+### Основные команды
+
+1. Для сборки образа из директории проекта:
+
+```sh
+docker build -t react-site .
+```
+2. Запуск контейнера:
+
+```sh
+docker run --name react-site -p 3000:80 react-site 
+```
+3. Остановить:
+
+```sh
+docker stop react-site
+```
+4. Удалить:
+
+```sh
+docker rm react-site
+```
+
+
